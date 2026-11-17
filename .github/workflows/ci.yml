@@ -19,10 +19,10 @@ jobs:
         dotnet-version: '8.0.x'
 
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore DrillApi/DrillApi.csproj
 
     - name: Build project
-      run: dotnet build --no-restore --configuration Release
+      run: dotnet build DrillApi/DrillApi.csproj --no-restore --configuration Release
 
     - name: Run tests
-      run: dotnet test --no-build --configuration Release --verbosity normal
+      run: dotnet test DrillApi/DrillApi.csproj --no-build --configuration Release --verbosity normal
