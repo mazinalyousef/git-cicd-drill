@@ -22,10 +22,10 @@ jobs:
           dotnet-version: "10.0.x"
 
       - name: Restore dependencies
-        run: dotnet restore DrillApi.sln
+        run: dotnet restore DrillApi.slnx
 
       - name: Build solution
-        run: dotnet build DrillApi.sln --no-restore --configuration Release
+        run: dotnet build DrillApi.slnx --no-restore --configuration Release
 
       - name: Run tests
-        run: dotnet test DrillApi.sln --no-build --configuration Release --verbosity normal
+        run: dotnet test DrillApi.slnx --no-build --configuration Release --verbosity normal
