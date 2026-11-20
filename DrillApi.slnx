@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="DrillApi.Tests/DrillApi.Tests.csproj" />
+  <Project Path="DrillApi/DrillApi.csproj" />
+</Solution>
